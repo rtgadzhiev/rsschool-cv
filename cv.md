@@ -22,9 +22,31 @@
 - VS Code
 
 ### Code Example
-
+This is my solution to the last Kata on **Codewars**:
+```js
+const findAverage = (array) => {
+  if (!array.length) {
+    return 0;
+  } else {
+    const sumOfNumbers = array.reduce((accumulator, number) => {
+      return accumulator + number;
+    }, 0);
+    return sumOfNumbers / array.length;
+  }
+}
+```
 
 ### Education
-
+- **Collage**: Saratov Railway Transport Technical College
+- **Music engineering**: Musicheads: Mixing and mastering by Konstantin Matafonov's team
+- **Courses**: 
+	- Udemy: Ivan Petrichenko - WEB-developer
+	- YouTube: Alexander's Lamkov HTML, CSS, JS courses
+	- YouTube: Bogdan's Staschuk Git course
+- **Self education**:
+	- Head First JavaScript Programming: A Brain-Frendly Guide
+	- Learn JavaScript
 
 ### Languages
+- **Russian** - native speaker
+- **English** - A1/A2
