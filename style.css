@@ -1,0 +1,135 @@
+:root {
+	--color-white: #FFFBF9;
+	--color-grey: #424242;
+	--color-black: #191919;
+	--section-padding-y: 50px;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url(./assets/fonts/Roboto-Medium.woff2) format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url(./assets/fonts/Roboto-Bold.woff2) format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url(./assets/fonts/Roboto-Black.woff2) format('woff2');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	background-color: var(--color-white);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	color: var(--color-black);
+}
+
+.header {
+	padding-block: 20px;
+}
+
+.menu {
+	display: flex;
+	justify-content: center;
+
+	.menu__list {
+		display: flex;
+		align-items: center;
+		gap: 50px;
+	}
+
+	.menu__link {
+		color: var(--color-black);
+		font-size: 16px;
+	}
+}
+
+.container {
+	max-width: 1440px;
+	padding-inline: 120px;
+	margin-inline: auto;
+}
+
+.section {
+	padding-block: var(--section-padding-y);
+
+	.section__title {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 50px;
+	}
+}
+
+.hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+
+	.hero__title {
+		max-width: 600px;
+		text-transform: uppercase;
+		font-weight: 900;
+		font-size: 70px;
+		line-height: 1;
+		text-wrap: balance;
+	}
+
+	.hero__image {
+		border-radius: 50%;
+	}
+}
+
+.about {
+	.about__text {
+		/* max-width: 800px; */
+		padding-top: 20px;
+		font-size: 20px;
+		text-align: left;
+		text-wrap: balance;
+		font-style: italic;
+		color: var(--color-grey);
+	}
+}
+
+.skills {
+	.skills__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 25px;
+	}
+
+	.skills__image {
+		height: 150px;
+	}
+}
+
+.contacts {
+	.contacts__list {
+		display: flex;
+		gap: 50px;
+		padding-top: 50px;
+		padding-bottom: 25px;
+	}
+
+	.contacts__link {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		font-size: 16px;
+		color: var(--color-black);
+	}
+}
