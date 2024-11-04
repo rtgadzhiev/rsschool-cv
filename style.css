@@ -53,6 +53,10 @@ body {
 	.menu__link {
 		color: var(--color-black);
 		font-size: 16px;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -131,5 +135,9 @@ body {
 		gap: 10px;
 		font-size: 16px;
 		color: var(--color-black);
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
